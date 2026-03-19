@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import logotipo from './assets/LOGOTIPO.JPG';
+import logotipo from './assets/LOGOTIPO.jpg';
 
 function App() {
   const [mostrarBoton, setMostrarBoton] = useState(false);
