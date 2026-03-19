@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/pivot-web/', // Actualizado al nombre de tu repositorio
+  // Base eliminada para que Vercel lo sirva en la raíz
 })
