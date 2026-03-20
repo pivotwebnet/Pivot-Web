@@ -17,24 +17,41 @@ const Reveal = ({ children }) => (
   </motion.div>
 );
 
-const PrestigeMap = ({ isFooter = false }) => (
-  <div className={`${isFooter ? 'w-full h-48 md:h-64' : 'w-full max-w-xl aspect-[21/9] mt-12 mb-8'} border border-white/10 shadow-2xl overflow-hidden relative group`}>
-    <iframe 
-      title="Ubicación PIVOT Rafaela"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54522.012476566275!2d-61.53039148560089!3d-31.258832822457816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ca630f92f25f2b%3A0xc3f7a63d9196b278!2sRafaela%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1709200000000!5m2!1ses-419!2sar" 
-      width="100%" 
-      height="100%" 
-      style={{ 
-        border: 0, 
-        filter: 'grayscale(1) invert(0.9) contrast(1.2) brightness(0.8)',
-        WebkitFilter: 'grayscale(1) invert(0.9) contrast(1.2) brightness(0.8)'
-      }} 
-      allowFullScreen="" 
-      loading="lazy"
-    ></iframe>
-    <div className="absolute inset-0 pointer-events-none bg-verde-bosque/20" />
-  </div>
-);
+const PrestigeMap = ({ isFooter = false }) => {
+  const [active, setActive] = useState(false);
+
+  return (
+    <div 
+      className={`${isFooter ? 'w-full h-48 md:h-64' : 'w-full max-w-xl aspect-[21/9] mt-12 mb-8'} border border-white/10 shadow-2xl overflow-hidden relative group cursor-pointer transition-all hover:border-white/20`}
+      onClick={() => !active && setActive(true)}
+    >
+      {!active ? (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-verde-bosque/40 backdrop-blur-sm group-hover:bg-verde-bosque/30 transition-all z-20">
+          <svg className="w-8 h-8 mb-2 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span className="text-[10px] uppercase tracking-[0.4em] font-medium opacity-40 group-hover:opacity-80 transition-opacity">Ver Ubicación</span>
+        </div>
+      ) : (
+        <iframe 
+          title="Ubicación PIVOT Rafaela"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54522.012476566275!2d-61.53039148560089!3d-31.258832822457816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ca630f92f25f2b%3A0xc3f7a63d9196b278!2sRafaela%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1709200000000!5m2!1ses-419!2sar" 
+          width="100%" 
+          height="100%" 
+          style={{ 
+            border: 0, 
+            filter: 'grayscale(1) invert(0.9) contrast(1.2) brightness(0.8)',
+            WebkitFilter: 'grayscale(1) invert(0.9) contrast(1.2) brightness(0.8)'
+          }} 
+          allowFullScreen="" 
+          loading="lazy"
+        ></iframe>
+      )}
+      <div className="absolute inset-0 pointer-events-none bg-verde-bosque/20 z-10" />
+    </div>
+  );
+};
 
 /**
  * COMPONENTE PRINCIPAL
@@ -199,6 +216,58 @@ function App() {
                     <div className="flex justify-between items-center border-t border-white/10 pt-10">
                       <span className="text-xs font-bold uppercase tracking-widest italic text-white/60">{card.s}</span>
                       <a href="https://wa.link/nofyhp" target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-blanco-hueso hover:text-verde-bosque transition-all text-white hover:text-verde-bosque" aria-label="Consultar por esta solución">→</a>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </section>
+
+            {/* SECCIÓN PORTAFOLIO / CASOS DE ÉXITO */}
+            <section id="proyectos" className="py-48 overflow-hidden bg-white/1">
+              <div className="container mx-auto px-8 mb-24">
+                <Reveal>
+                  <h2 className="text-5xl md:text-8xl font-serif font-bold mb-8 italic text-white text-balance">Casos de <br/> <span className="opacity-50">éxito</span></h2>
+                  <p className="text-[11px] opacity-40 max-w-md font-sans leading-loose tracking-widest uppercase mb-12">Experiencias optimizadas para cualquier dispositivo. Del escritorio a tu smartphone sin fricciones.</p>
+                </Reveal>
+              </div>
+
+              <div className="flex gap-10 overflow-x-auto pb-16 px-8 md:px-[10%] snap-x snap-mandatory no-scrollbar cursor-grab active:cursor-grabbing">
+                {[
+                  { t: "Studio Premium", c: "Landing de Autor", d: "Arquitectura de información diseñada para convertir desde cualquier smartphone.", l: "https://wa.link/nofyhp" },
+                  { t: "Logística 360", c: "Sistema de Gestión", d: "Panel administrativo totalmente responsivo para control en tiempo real desde el campo.", l: "https://wa.link/nofyhp" },
+                  { t: "Art Gallery", c: "E-commerce Exclusivo", d: "Navegación fluida y visualización de alta resolución en tablets y móviles.", l: "https://wa.link/nofyhp" },
+                  { t: "Salud Digital", c: "Ecosistema Médico", d: "Interfaz pensada para uso rápido en móviles por profesionales en movimiento.", l: "https://wa.link/nofyhp" }
+                ].map((proj, i) => (
+                  <motion.div 
+                    key={i} 
+                    className="min-w-[320px] md:min-w-[500px] snap-center group"
+                    whileHover={{ y: -8 }}
+                  >
+                    <div className="aspect-[16/10] bg-white/5 border border-white/10 mb-8 relative overflow-hidden flex items-center justify-center transition-all group-hover:border-white/20 shadow-2xl">
+                      {/* Espacio reservado para imagen (placeholder visual) */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-50 group-hover:scale-110 transition-transform duration-700" />
+                      <div className="z-10 text-center">
+                         <span className="text-[10px] uppercase tracking-[0.4em] opacity-30 group-hover:opacity-60 transition-opacity">Espacio para Imagen</span>
+                      </div>
+                      
+                      {/* Badge Mobile-Ready */}
+                      <div className="absolute top-6 right-6 flex items-center gap-2 bg-verde-bosque/40 backdrop-blur-md px-4 py-2 border border-white/10 rounded-full">
+                         <div className="w-1.5 h-1.5 rounded-full bg-verde-400 animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]" />
+                         <span className="text-[8px] uppercase tracking-widest text-white/70 font-bold">Mobile Ready</span>
+                      </div>
+                    </div>
+                    
+                    <div className="px-2">
+                      <h3 className="text-2xl font-serif font-bold mb-2 italic text-white/90">{proj.t}</h3>
+                      <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4 font-bold tracking-widest">{proj.c}</p>
+                      <p className="opacity-50 text-sm leading-relaxed mb-6 max-w-sm text-blanco-hueso/80">{proj.d}</p>
+                      <a 
+                        href={proj.l} 
+                        className="inline-flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] font-bold text-white/60 hover:text-white transition-all no-underline group/link"
+                      >
+                        Ver Detalles 
+                        <span className="w-8 h-px bg-white/20 group-hover/link:w-12 transition-all" />
+                      </a>
                     </div>
                   </motion.div>
                 ))}
