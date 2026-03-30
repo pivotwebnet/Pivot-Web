@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
-import logotipo from './assets/LOGOTIPO.jpg';
+import logotipo from './assets/LOGOTIPO.png';
 import casoExito1 from './assets/casoexito1.png';
 import casoExito2 from './assets/casoexito2.png';
 
@@ -118,7 +118,7 @@ function App() {
             className="flex items-center gap-3 bg-transparent border-none p-0 cursor-pointer outline-none transition-opacity hover:opacity-80"
             aria-label="Ir al inicio"
           >
-            <img src={logotipo} alt="Logo PIVOT" className="h-8 md:h-10 w-auto object-contain" />
+            <img src={logotipo} alt="Logo PIVOT" className="h-15 md:h-15 w-auto object-contain" />
             <div className="hidden sm:block h-8 w-px bg-white/10 mx-2" />
             <span className="hidden sm:block text-[10px] font-sans opacity-40 tracking-[0.3em] uppercase text-white font-medium">&lt;EST. 2026 /&gt;</span>
           </button>
