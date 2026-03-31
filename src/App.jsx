@@ -305,11 +305,7 @@ function App() {
                     className="min-w-[85vw] md:min-w-0 snap-center p-8 md:p-16 bg-white/[0.03] border border-white/5 relative overflow-hidden group transition-all duration-500 flex flex-col justify-between"
                   >
                     <div>
-<<<<<<< HEAD
-                      <h3 className="text-[9px] md:text-[10px] uppercase tracking-[0.4em] mb-8 md:mb-12 opacity-40 font-bold text-white text-balance"> </h3>
-=======
-                      <h3 className="text-[9px] md:text-[10px] uppercase tracking-[0.4em] mb-8 md:mb-12 opacity-40 font-bold text-white text-balance">Concepto {card.c}</h3>
->>>>>>> origin/main
+                      <h3 className="text-[9px] md:text-[10px] uppercase tracking-[0.4em] mb-8 md:mb-12 opacity-40 font-bold text-white text-balance"></h3>
                       <h4 className="text-3xl md:text-4xl font-serif font-bold mb-6 md:mb-8 italic text-white leading-tight text-balance">{card.t}</h4>
                       <p className="text-sm md:text-base opacity-50 mb-8 md:mb-12 leading-relaxed font-sans max-w-xs text-blanco-hueso/80">{card.p}</p>
                     </div>
@@ -386,13 +382,8 @@ function App() {
                       )}
 
                       <div className="absolute top-4 right-4 md:top-6 md:right-6 flex items-center gap-2 bg-verde-bosque/40 backdrop-blur-md px-3 py-1.5 md:px-4 md:py-2 border border-white/10 rounded-full">
-<<<<<<< HEAD
                          <div className="w-1.5 h-1.5 rounded-full bg-verde-400 animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)] transition-all duration-300 group-hover:bg-emerald-300 group-hover:shadow-[0_0_12px_rgba(74,222,128,0.8)]" />
-                         <span className="text-[7px] md:text-[8px] uppercase tracking-widest text-emerald-400 font-bold">Mobile Ready</span>
-=======
-                         <div className="w-1.5 h-1.5 rounded-full bg-verde-400 animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.5)]" />
-                         <span className="text-[7px] md:text-[8px] uppercase tracking-widest text-white/70 font-bold">Mobile Ready</span>
->>>>>>> origin/main
+                         <span className="text-[7px] md:text-[8px] uppercase tracking-widest text-black-700 font-bold">Optimizado para smartphones</span>
                       </div>
                     </div>
 
