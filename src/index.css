@@ -8,6 +8,13 @@
   --font-sans: "Inter", sans-serif;
 }
 
+/* Solo ocultamos el cursor en dispositivos que usen puntero (Desktop) */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
 :root {
   background-color: var(--color-verde-bosque);
   color: var(--color-blanco-hueso);

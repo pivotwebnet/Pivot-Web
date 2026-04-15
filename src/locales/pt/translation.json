@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "what_we_offer": "O que oferecemos",
+    "solutions": "Soluções",
+    "terms": "Termos",
+    "start": "Início",
+    "let_talk": "Vamos conversar",
+    "talk": "Conversar",
+    "back_to_start": "Voltar ao Início"
+  },
+  "hero": {
+    "location": "📍 Rafaela, Santa Fe — Argentina",
+    "title": "A mudança na",
+    "title_italic": "direção certa.",
+    "description": "Na PIVOT desenvolvemos seu site e sistemas de negócio sob padrões de alto prestígio. Elevamos sua presença online à altura da trajetória que você representa.",
+    "contact": "Contate-nos",
+    "explore": "Explorar Soluções"
+  },
+  "values": {
+    "title": "Sua visão merece",
+    "title_italic": "distinção absoluta.",
+    "description": "Não somos uma agência convencional. Somos um estúdio de engenharia que prioriza o prestígio sobre o genérico.",
+    "01": {
+      "title": "Atendimento Personalizado",
+      "description": "Atendemos em Rafaela e região de forma presencial. PIVOT é compromisso direto e cara a cara."
+    },
+    "02": {
+      "title": "Engenharia Web",
+      "description": "Código sob medida de alto desempenho. Nossa lógica de backend garante sua segurança e velocidade."
+    },
+    "03": {
+      "title": "Exclusividade Premium",
+      "description": "Cada projeto é uma peça única de software projetada para durar."
+    }
+  },
+  "solutions": {
+    "title": "Soluções",
+    "subtitle": "Soluções projetadas para durar",
+    "card_01": {
+      "title": "Sites de Alto Impacto",
+      "description": "Criamos páginas web únicas projetadas especificamente para atrair clientes. Sem templates genéricos: apenas design exclusivo, rápido e que funciona perfeitamente em celulares.",
+      "footer": "Sua Marca Online"
+    },
+    "card_02": {
+      "title": "Sistemas para seu Negócio",
+      "description": "Desenvolvemos ferramentas sob medida para organizar sua empresa. Do controle de estoque à gestão de vendas, tudo centralizado em um software fácil de usar.",
+      "footer": "Sua Operação Digital"
+    }
+  },
+  "success_cases": {
+    "title": "Casos de Sucesso",
+    "description": "Experiências otimizadas para qualquer dispositivo. Do desktop ao seu smartphone sem fricções.",
+    "prev": "Projeto anterior",
+    "next": "Próximo projeto",
+    "image_placeholder": "Espaço para Imagem",
+    "optimized": "Otimizado para smartphones",
+    "see_details": "Ver Detalhes",
+    "project_01": {
+      "title": "Decoud Colchões",
+      "category": "E-commerce Premium",
+      "description": "Loja online de alta gama com gateway de pagamento integrado e design ultra-rápido."
+    },
+    "project_02": {
+      "title": "Painel de Controle PIVOT",
+      "category": "Sistema de Gestão",
+      "description": "Sistema de gestão integral para otimizar operações e tomar decisões informadas."
+    },
+    "project_03": {
+      "title": "Seu Negócio",
+      "category": "Sistema sob Medida",
+      "description": "Interface personalizada para suas necessidades específicas."
+    }
+  },
+  "cta": {
+    "title": "Eleve seu padrão.",
+    "description": "Iniciemos hoje a transformação da sua presença digital com a distinção que sua trajetória merece.",
+    "button": "Falar com um consultor"
+  },
+  "terms": {
+    "title": "TERMOS E CONDIÇÕES",
+    "subtitle": "— DE SERVIÇO PIVOT —",
+    "section_01": {
+      "title": "1. OBJETO E ESCOPO",
+      "description": "A PIVOT fornece serviços de consultoria estratégica e desenvolvimento de soluções digitais de alto impacto, incluindo plataformas web, sistemas de gestão (ERP/CRM) e otimização de processos. A aceitação destes termos constitui o marco regulatório para toda relação comercial presente e futura entre as partes."
+    },
+    "section_02": {
+      "title": "2. ESPECIFICAÇÕES DE PAGAMENTO",
+      "description": "Os honorários por implementação serão acordados individualmente em Pesos Argentinos (ARS). O serviço de manutenção e hospedagem terá uma taxa mensal expressa em Dólares Americanos (USD), liquidável em ARS à taxa de câmbio Dólar MEP (Venda) do dia do pagamento. Os pagamentos devem ser efetuados do dia 1 ao 10 de cada mês."
+    },
+    "section_03": {
+      "title": "3. PROPRIEDADE INTELECTUAL",
+      "description": "O Cliente mantém a propriedade sobre sua marca, conteúdos e design visual personalizado. A PIVOT retém a propriedade intelectual sobre o motor do software, algoritmos e lógica de negócio base, concedendo ao Cliente uma Licença de Uso Perpétua, intransferível e não exclusiva sobre o produto final."
+    },
+    "section_04": {
+      "title": "4. CONTINUIDADE E SUPORTE",
+      "description": "A PIVOT garante uma disponibilidade do serviço de 99,9%. A manutenção inclui correção de erros, atualizações de segurança e suporte técnico prioritário. O inadimplemento no pagamento superior a 30 dias corridos facultará a suspensão temporária do acesso aos serviços contratados."
+    },
+    "section_05": {
+      "title": "5. CONFIDENCIALIDADE",
+      "description": "Ambas as partes obrigam-se a manter estrito sigilo sobre toda informação técnica, comercial ou estratégica trocada durante a prestação do serviço. Este compromisso perdurará mesmo após o término do vínculo comercial, sob as normativas de Proteção de Dados Pessoais vigentes."
+    },
+    "section_06": {
+      "title": "6. JURISDIÇÃO E LEI APLICÁVEL",
+      "description": "Diante de qualquer divergência, as partes comprometem-se a esgotar as instâncias de negociação direta de boa fé. Persistindo o conflito, submetem-se à jurisdição dos Tribunais Ordinários da Cidade de Rafaela, Província de Santa Fe, renunciando a qualquer outro foro."
+    },
+    "back": "Voltar ao início"
+  },
+  "footer": {
+    "location": "Rafaela, Santa Fe.",
+    "agreements": "Acordos",
+    "rights": "© 2026 PIVOT DEVSTUDIO. TODOS OS DIREITOS RESERVADOS.",
+    "local_presence": "Presença Local — Rafaela e Região"
+  },
+  "map": {
+    "view_location": "Ver Localização"
+  }
+}
